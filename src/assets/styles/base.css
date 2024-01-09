@@ -1,0 +1,22 @@
+:root {
+    /* Color */
+    --base-background-color:#27292D;
+    --base-background-color-light: #2d3037;
+    --base-font-color: #D1DBF0;
+    --base-font-color-detail: #8A9BBD;
+    --base-font-color-detail-dark: #495F8A;
+    --base-font-color-detail-decoration: #1D3057;
+    /* Font */
+    --base-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html {
+    font-size : 62.5%;
+}
+
+body {
+    background: var(--base-background-color);
+    color: var(--base-font-color);
+    font-family: var(--base-font-family);
+    font-size: 1.8rem;
+}

@@ -1,0 +1,27 @@
+.AppHero {
+    background-image: url(../../assets/img/IMG_1306_greyFilter.jpg);
+    background-size: cover;
+    background-position-x: 100%;
+    height: 45rem;
+    text-align: center;
+}
+
+.AppHero--profilImg {
+    width: 24rem;
+    margin-top: 4rem;
+    border-radius: 100%;
+}
+
+.AppHero--titleGroup{
+    margin: 2rem 0;
+}
+
+.AppHero--title {
+    font-size: 4rem;
+}
+
+.AppHero--subTitle {
+    margin-top: 1rem;
+    padding: 0 8rem;
+    font-size: 2.5rem;
+}

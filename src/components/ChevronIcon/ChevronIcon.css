@@ -1,0 +1,8 @@
+.ChevronIcon {
+    font-size: 5rem;
+    /* reverse color */
+    color: var(--base-background-color);
+    background: var(--base-font-color-detail-dark);
+    border-radius: 100%;
+    padding: 0.3rem;
+}

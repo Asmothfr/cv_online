@@ -1,0 +1,13 @@
+.TextImageDisplay{
+    list-style: none;
+}
+.TextImageDisplay--ContentBlock {
+    display: flex;
+    margin-bottom: 3rem;
+    align-items: center;
+}
+
+.TextImageDisplay--Img {
+    width: 4rem;
+    margin: 0 2rem;
+}

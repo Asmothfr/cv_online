@@ -1,0 +1,32 @@
+.TextInfoFormat {
+    margin: 2rem 0 0 5rem;
+}
+
+.TextInfoFormat--Content {
+    display: flex;
+    margin-bottom: 5rem;
+}
+
+.TextInfoFormat--DateBlock {
+    width: 14rem;
+}
+
+.TextInfoFormat--Date{
+    display: flex;
+}
+
+.TextInfoFormat--Years{
+    margin-left: 0.5rem;
+}
+.TextInfoFormat--Company {
+    display: flex;
+}
+
+.TextInfoFormat--DetailColor{
+    color:var(--base-font-color-detail);
+}
+
+.TextInfoFormat--Location{
+    margin-left: 0.4rem;
+    color:var(--base-font-color-detail-dark);
+}

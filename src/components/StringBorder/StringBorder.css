@@ -1,0 +1,16 @@
+.StringBorder {
+    background-color: var(--base-background-color-light);
+    border-radius: 1rem;
+    text-align: center;
+    font-size: 2rem;
+}
+.StringBorder--Title{
+    margin : 5rem 3rem;
+    padding: 2rem 2rem;
+    font-size: 3rem;
+}
+.StringBorder--Text {
+    margin: 4rem 3rem;
+    padding: 3rem 2rem;
+    font-size: 2rem;
+}
