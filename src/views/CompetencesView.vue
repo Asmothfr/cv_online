@@ -1,18 +1,17 @@
 <template>
   <main class="CompetenceView">
-  <StringBorder :is-title="isTitle" :content="stringBorderContent" />
-  <TextImageDisplay />
-  <ChevronIcon class="CompetenceView--Chevron" />
+    <StringBorder is-title :content="stringBorderContent" />
+    <TextImageDisplay />
+    <ChevronIcon class="CompetenceView__Chevron" />
   </main>
 </template>
 
 <script setup>
-import StringBorder from '../components/StringBorder/StringBorder.vue'
-import TextImageDisplay from '../components/TextImageDisplay/TextImageDisplay.vue'
-import ChevronIcon from '../components/ChevronIcon/ChevronIcon.vue'
+import StringBorder from '@/components/StringBorder/StringBorder.vue'
+import TextImageDisplay from '@/components/TextImageDisplay/TextImageDisplay.vue'
+import ChevronIcon from '@/components/ChevronIcon/ChevronIcon.vue'
 
 const stringBorderContent = "Compétences"
-const isTitle = true
 </script>
 
 <style scoped>
@@ -22,7 +21,7 @@ const isTitle = true
   min-height: 100vh;
 }
 
-.CompetenceView--Chevron {
+.CompetenceView__Chevron {
   margin: auto auto 5rem;
 }
 </style>

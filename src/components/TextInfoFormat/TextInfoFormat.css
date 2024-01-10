@@ -2,31 +2,39 @@
     margin: 2rem 0 0 5rem;
 }
 
-.TextInfoFormat--Content {
+.TextInfoFormat__content {
     display: flex;
+    align-items: center;
     margin-bottom: 5rem;
 }
 
-.TextInfoFormat--DateBlock {
+.TextInfoFormat__dateBlock {
     width: 14rem;
 }
 
-.TextInfoFormat--Date{
+.TextInfoFormat__date {
     display: flex;
+    min-width: 150px;
 }
 
-.TextInfoFormat--Years{
+.TextInfoFormat__years {
     margin-left: 0.5rem;
 }
-.TextInfoFormat--Company {
-    display: flex;
+
+.TextInfoFormat--detailColor {
+    color: var(--base-font-color-detail);
 }
 
-.TextInfoFormat--DetailColor{
-    color:var(--base-font-color-detail);
+.TextInfoFormat__location {
+    color: var(--base-font-color-detail-dark);
 }
 
-.TextInfoFormat--Location{
-    margin-left: 0.4rem;
-    color:var(--base-font-color-detail-dark);
+@media screen and (min-width: 420px) {
+    .TextInfoFormat__company {
+        display: flex;
+    }
+
+    .TextInfoFormat__location {
+        margin-left: 0.4rem;
+    }
 }

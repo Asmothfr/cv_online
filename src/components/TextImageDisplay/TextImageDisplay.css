@@ -1,13 +1,14 @@
-.TextImageDisplay{
+.TextImageDisplay {
     list-style: none;
 }
-.TextImageDisplay--ContentBlock {
+
+.TextImageDisplay__contentBlock {
     display: flex;
-    margin-bottom: 3rem;
     align-items: center;
+    margin-bottom: 3rem;
 }
 
-.TextImageDisplay--Img {
+.TextImageDisplay__img {
     width: 4rem;
     margin: 0 2rem;
 }

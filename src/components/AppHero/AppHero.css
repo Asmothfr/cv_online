@@ -6,21 +6,21 @@
     text-align: center;
 }
 
-.AppHero--profilImg {
+.AppHero__profilImg {
     width: 24rem;
     margin-top: 4rem;
     border-radius: 100%;
 }
 
-.AppHero--titleGroup{
+.AppHero__titleGroup {
     margin: 2rem 0;
 }
 
-.AppHero--title {
+.AppHero__title {
     font-size: 4rem;
 }
 
-.AppHero--subTitle {
+.AppHero__subTitle {
     margin-top: 1rem;
     padding: 0 8rem;
     font-size: 2.5rem;

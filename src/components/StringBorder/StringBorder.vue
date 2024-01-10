@@ -1,5 +1,5 @@
 <template>
-  <div class="StringBorder" :class="{ 'StringBorder--Title' : isTitle, 'StringBorder--Text' : !isTitle }">
+  <div class="StringBorder" :class="{ 'StringBorder--title': isTitle }">
     <p>{{ content }}</p>
   </div>
 </template>
@@ -10,13 +10,10 @@ defineProps({
     type: String,
     required: true,
   },
-  isTitle : {
-    type: Boolean,
-    required: true
-  }
+  isTitle: Boolean
 })
 </script>
 
 <style>
-  @import url(StringBorder.css);
+@import url(StringBorder.css);
 </style>

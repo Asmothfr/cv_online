@@ -1,6 +1,8 @@
 <template>
   <div>
-    <font-awesome-icon class="ChevronIcon" :icon="['fas', 'circle-chevron-down']" />
+    <button class="ChevronIcon">
+      <font-awesome-icon class="ChevronIcon--Style" :icon="['fas', 'chevron-down']" />
+    </button>
   </div>
 </template>
 
