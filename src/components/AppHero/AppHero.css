@@ -1,13 +1,13 @@
 .AppHero {
-    background-image: url(../../assets/img/IMG_1306_greyFilter.jpg);
+    background-image: url(../../assets/img/IMG_1306_greyFilter700px.jpg);
     background-size: cover;
-    background-position-x: 100%;
+    background-position-y: 85%;
+    background-position-x: 85%;
     height: 45rem;
     text-align: center;
 }
 
 .AppHero__profilImg {
-    width: 24rem;
     margin-top: 4rem;
     border-radius: 100%;
 }
@@ -24,4 +24,16 @@
     margin-top: 1rem;
     padding: 0 8rem;
     font-size: 2.5rem;
+}
+
+@media screen and (min-width:700px) {
+    .AppHero {
+        background-image: url(../../assets/img/IMG_1306_greyFilter1100px.jpg);
+    }
+}
+
+@media screen and (min-width:1100px) {
+    .AppHero {
+        background-image: url(../../assets/img/IMG_1306_greyFilter1920px.jpg);
+    }
 }
