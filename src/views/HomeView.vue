@@ -2,7 +2,7 @@
   <main class="HomeView">
     <AppHero />
     <StringBorder :content="stringBorderContent" />
-    <DownChevronButton :route="route" class="HomeView__chevron" />
+    <DownChevronButton :to="route" route class="HomeView__chevron" />
   </main>
 </template>
 

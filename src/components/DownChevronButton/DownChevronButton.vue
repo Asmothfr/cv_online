@@ -1,21 +1,11 @@
 <template>
-  <div>
-    <button class="DownChevronButton">
-      <RouterLink class="DownChevronButton__link" :to="route">
-        <font-awesome-icon class="DownChevronButton--Style" :icon="['fas', 'chevron-down']" />
-      </RouterLink>
-    </button>
-  </div>
+  <RouterLink class=" DownChevronButton">
+    <font-awesome-icon class="DownChevronButton__style" :icon="['fas', 'chevron-down']" />
+  </RouterLink>
 </template>
 
 <script setup>
 import { RouterLink } from 'vue-router';
-defineProps({
-  route: {
-    type: String,
-    required: true
-  }
-})
 </script>
 
 <style>

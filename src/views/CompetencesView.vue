@@ -2,7 +2,7 @@
   <main class="CompetenceView">
     <StringBorder is-title :content="stringBorderContent" />
     <TextImageDisplay />
-    <DownChevronButton :route="route" class="CompetenceView__Chevron" />
+    <DownChevronButton :to="route" class="CompetenceView__Chevron" />
   </main>
 </template>
 

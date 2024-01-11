@@ -2,7 +2,7 @@
   <main class="FormationsView">
     <StringBorder is-title :content="StringBorderContent" />
     <TextInfoFormat :content-page="contentPage" />
-    <DownChevronButton :route="route" class="FormationsView__chevron" />
+    <DownChevronButton :to="route" class="FormationsView__chevron" />
   </main>
 </template>
 

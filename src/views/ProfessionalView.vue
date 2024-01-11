@@ -2,7 +2,7 @@
   <main class="ProfessionalView">
     <StringBorder is-title :content="StringBorderContent" />
     <TextInfoFormat :content-page="contentPage" />
-    <DownChevronButton :route="route" class="ProfessionalView__chevron" />
+    <DownChevronButton :to="route" class="ProfessionalView__chevron" />
   </main>
 </template>
 
