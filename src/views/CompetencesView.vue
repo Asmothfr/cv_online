@@ -2,15 +2,16 @@
   <main class="CompetenceView">
     <StringBorder is-title :content="stringBorderContent" />
     <TextImageDisplay />
-    <ChevronIcon class="CompetenceView__Chevron" />
+    <DownChevronButton :route="route" class="CompetenceView__Chevron" />
   </main>
 </template>
 
 <script setup>
 import StringBorder from '@/components/StringBorder/StringBorder.vue'
 import TextImageDisplay from '@/components/TextImageDisplay/TextImageDisplay.vue'
-import ChevronIcon from '@/components/ChevronIcon/ChevronIcon.vue'
+import DownChevronButton from '@/components/DownChevronButton/DownChevronButton.vue'
 
+const route = "/professional"
 const stringBorderContent = "Compétences"
 </script>
 

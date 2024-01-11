@@ -2,15 +2,16 @@
   <main class="FormationsView">
     <StringBorder is-title :content="StringBorderContent" />
     <TextInfoFormat :content-page="contentPage" />
-    <ChevronIcon class="FormationsView__chevron" />
+    <DownChevronButton :route="route" class="FormationsView__chevron" />
   </main>
 </template>
 
 <script setup>
 import StringBorder from '@/components/StringBorder/StringBorder.vue';
-import ChevronIcon from '@/components/ChevronIcon/ChevronIcon.vue';
 import TextInfoFormat from '@/components/TextInfoFormat/TextInfoFormat.vue';
+import DownChevronButton from '@/components/DownChevronButton/DownChevronButton.vue';
 
+const route = "/"
 const StringBorderContent = "Formations"
 
 const contentPage = [{

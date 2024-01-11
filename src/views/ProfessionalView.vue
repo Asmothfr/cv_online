@@ -2,15 +2,16 @@
   <main class="ProfessionalView">
     <StringBorder is-title :content="StringBorderContent" />
     <TextInfoFormat :content-page="contentPage" />
-    <ChevronIcon class="ProfessionalView__chevron" />
+    <DownChevronButton :route="route" class="ProfessionalView__chevron" />
   </main>
 </template>
 
 <script setup>
 import StringBorder from '@/components/StringBorder/StringBorder.vue'
-import ChevronIcon from '@/components/ChevronIcon/ChevronIcon.vue'
 import TextInfoFormat from '@/components/TextInfoFormat/TextInfoFormat.vue'
+import DownChevronButton from '@/components/DownChevronButton/DownChevronButton.vue'
 
+const route = "/formations"
 const StringBorderContent = "Parcour Professionnel"
 
 const contentPage = [{
