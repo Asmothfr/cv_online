@@ -1,14 +1,14 @@
 <template>
   <main class="HomeView">
     <AppHero />
-    <StringBorder :content="stringBorderContent" />
+    <PresentationCard :content="stringBorderContent" />
     <DownChevronButton :to="route" route class="HomeView__chevron" />
   </main>
 </template>
 
 <script setup>
 import AppHero from '@/components/AppHero/AppHero.vue'
-import StringBorder from '@/components/StringBorder/StringBorder.vue'
+import PresentationCard from '@/components/PresentationCard/PresentationCard.vue'
 import DownChevronButton from '@/components/DownChevronButton/DownChevronButton.vue'
 
 const route = "/competences"

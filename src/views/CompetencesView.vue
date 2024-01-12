@@ -1,28 +1,29 @@
 <template>
-  <main class="CompetenceView">
-    <StringBorder is-title :content="stringBorderContent" />
+  <main class="CompetencesView">
+    <MenuTitle :title="title" />
     <TextImageDisplay />
-    <DownChevronButton :to="route" class="CompetenceView__Chevron" />
+    <DownChevronButton :to="buttonRoute" class="CompetencesView__Chevron" />
   </main>
 </template>
 
 <script setup>
-import StringBorder from '@/components/StringBorder/StringBorder.vue'
+import MenuTitle from '@/components/MenuTitle/MenuTitle.vue';
 import TextImageDisplay from '@/components/TextImageDisplay/TextImageDisplay.vue'
 import DownChevronButton from '@/components/DownChevronButton/DownChevronButton.vue'
 
-const route = "/professional"
-const stringBorderContent = "Compétences"
+const title = "Compétences"
+const buttonRoute = "/professional"
+
 </script>
 
 <style scoped>
-.CompetenceView {
+.CompetencesView {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-.CompetenceView__Chevron {
+.CompetencesView__Chevron {
   margin: auto auto 5rem;
 }
 </style>

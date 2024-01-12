@@ -1,4 +1,4 @@
-.StringBorder {
+.PresentationCard {
     margin: 4rem 3rem;
     max-width: 440px;
     padding: 3rem 2rem;
@@ -8,25 +8,14 @@
     font-size: 2rem;
 }
 
-.StringBorder--title {
-    margin: 5rem 3rem;
-    padding: 2rem 2rem;
-    font-size: 3rem;
-}
-
 @media screen and (min-width:500px) {
-    .StringBorder--title {
-        min-width: 440px;
-        margin: 5rem auto;
-    }
-
-    .StringBorder {
+    .PresentationCard {
         margin: 4rem auto;
     }
 }
 
 @media screen and (min-width:700px) {
-    .StringBorder {
+    .PresentationCard {
         max-width: 600px;
         margin: 4rem auto;
     }

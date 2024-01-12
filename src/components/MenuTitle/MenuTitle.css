@@ -1,0 +1,21 @@
+li {
+    list-style: none;
+    padding: 0;
+}
+
+.MenuTitle__title {
+    margin: 5rem 3rem;
+    max-width: 440px;
+    padding: 2rem 2rem;
+    text-align: center;
+    background-color: var(--base-background-color-light);
+    border-radius: 1rem;
+    font-size: 3rem;
+}
+
+@media screen and (min-width:500px) {
+    .MenuTitle__title {
+        min-width: 440px;
+        margin: 5rem auto;
+    }
+}

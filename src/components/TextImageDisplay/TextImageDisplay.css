@@ -1,5 +1,7 @@
 .TextImageDisplay {
     list-style: none;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .TextImageDisplay__contentBlock {
@@ -11,13 +13,6 @@
 .TextImageDisplay__img {
     margin: 0 2rem;
     width: 4rem;
-}
-
-@media screen and (min-width: 500px) {
-    .TextImageDisplay {
-        margin: 0 auto;
-        padding: 0;
-    }
 }
 
 @media screen and (min-width: 1100px) {

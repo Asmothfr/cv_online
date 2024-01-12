@@ -1,18 +1,18 @@
 <template>
   <main class="ProfessionalView">
-    <StringBorder is-title :content="StringBorderContent" />
+    <MenuTitle :title="title" />
     <TextInfoFormat :content-page="contentPage" />
     <DownChevronButton :to="route" class="ProfessionalView__chevron" />
   </main>
 </template>
 
 <script setup>
-import StringBorder from '@/components/StringBorder/StringBorder.vue'
+import MenuTitle from '@/components/MenuTitle/MenuTitle.vue';
 import TextInfoFormat from '@/components/TextInfoFormat/TextInfoFormat.vue'
 import DownChevronButton from '@/components/DownChevronButton/DownChevronButton.vue'
 
+const title = "Parcours Professionnel"
 const route = "/formations"
-const StringBorderContent = "Parcour Professionnel"
 
 const contentPage = [{
   startMonth: "Juin",
