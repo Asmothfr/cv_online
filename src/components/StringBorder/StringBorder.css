@@ -1,5 +1,6 @@
 .StringBorder {
     margin: 4rem 3rem;
+    max-width: 440px;
     padding: 3rem 2rem;
     text-align: center;
     background-color: var(--base-background-color-light);
@@ -11,4 +12,18 @@
     margin: 5rem 3rem;
     padding: 2rem 2rem;
     font-size: 3rem;
+}
+
+@media screen and (min-width:500px) {
+    .StringBorder--title {
+        min-width: 440px;
+        margin: 5rem auto;
+    }
+}
+
+@media screen and (min-width:700px) {
+    .StringBorder {
+        max-width: 600px;
+        margin: 4rem auto;
+    }
 }

@@ -9,6 +9,7 @@
 
 .AppHero__profilImg {
     margin-top: 4rem;
+    max-height: 240px;
     border-radius: 100%;
 }
 
@@ -22,7 +23,6 @@
 
 .AppHero__subTitle {
     margin-top: 1rem;
-    padding: 0 8rem;
     font-size: 2.5rem;
 }
 
