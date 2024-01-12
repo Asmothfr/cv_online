@@ -19,6 +19,10 @@
         min-width: 440px;
         margin: 5rem auto;
     }
+
+    .StringBorder {
+        margin: 4rem auto;
+    }
 }
 
 @media screen and (min-width:700px) {
