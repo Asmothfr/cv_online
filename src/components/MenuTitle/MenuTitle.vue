@@ -2,10 +2,14 @@
   <nav>
     <ul>
       <li class="MenuTitle">
-        <p class="MenuTitle__title">{{ title }}</p>
-        <ul>
+        <div class="MenuTitle__titleSection">
+          <p>{{ title }}</p>
+          <font-awesome-icon @click="switchMenuValue" class="MenuTitle__chevron"
+            :class="{ 'MenuTitle__chevron--animation': !hideMenu }" :icon="['fas', 'chevron-down']" />
+        </div>
+        <ul class="MenuTitle__menu" :class="{ 'MenuTitle__menu--hide': hideMenu }">
           <li v-for="filteredInfo in filteredInfos" v-bind:key="filteredInfo">
-            <RouterLink :to=filteredInfo.route>{{ filteredInfo.pageTitle }}</RouterLink>
+            <RouterLink class="MenuTitle__link" :to=filteredInfo.route>{{ filteredInfo.pageTitle }}</RouterLink>
           </li>
         </ul>
       </li>
@@ -14,6 +18,7 @@
 </template>
   
 <script setup>
+import { ref } from 'vue';
 import { RouterLink } from 'vue-router';
 import { useRoute } from 'vue-router';
 
@@ -44,8 +49,13 @@ const routeInfo = [{
   pageTitle: "Formations"
 },
 ]
-
 const filteredInfos = routeInfo.filter((route) => route.route !== currentRoute)
+
+const hideMenu = ref(true)
+const switchMenuValue = () => {
+  hideMenu.value = !hideMenu.value
+}
+
 </script>
   
 <style scoped>
