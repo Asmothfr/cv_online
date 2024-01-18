@@ -1,19 +1,16 @@
 <template>
-  <nav>
-    <ul>
-      <li class="MenuTitle">
-        <div class="MenuTitle__titleSection">
-          <p>{{ title }}</p>
-          <font-awesome-icon @click="switchMenuValue" class="MenuTitle__chevron"
-            :class="{ 'MenuTitle__chevron--animation': !hideMenu }" :icon="['fas', 'chevron-down']" />
-        </div>
-        <ul class="MenuTitle__menu" :class="{ 'MenuTitle__menu--hide': hideMenu }">
-          <li v-for="filteredInfo in filteredInfos" v-bind:key="filteredInfo">
-            <RouterLink class="MenuTitle__link" :to=filteredInfo.route>{{ filteredInfo.pageTitle }}</RouterLink>
-          </li>
-        </ul>
-      </li>
-    </ul>
+  <nav :class="{ 'MenuTitle--isOpen': showMenu }">
+    <div class="MenuTitle">
+      <div class="MenuTitle__titleSection">
+        <p>{{ title }}</p>
+        <font-awesome-icon @click="switchMenuValue" class="MenuTitle__chevron" :icon="['fas', 'chevron-down']" />
+      </div>
+      <ul class="MenuTitle__menu">
+        <li v-for="filteredInfo in filteredInfos" v-bind:key="filteredInfo">
+          <RouterLink class="MenuTitle__link" :to=filteredInfo.route>{{ filteredInfo.pageTitle }}</RouterLink>
+        </li>
+      </ul>
+    </div>
   </nav>
 </template>
   
@@ -30,6 +27,7 @@ defineProps({
 })
 
 const route = useRoute()
+console.log(route)
 const currentRoute = route.fullPath
 
 const routeInfo = [{
@@ -51,9 +49,9 @@ const routeInfo = [{
 ]
 const filteredInfos = routeInfo.filter((route) => route.route !== currentRoute)
 
-const hideMenu = ref(true)
+const showMenu = ref(false)
 const switchMenuValue = () => {
-  hideMenu.value = !hideMenu.value
+  showMenu.value = !showMenu.value
 }
 
 </script>
