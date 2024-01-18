@@ -1,16 +1,14 @@
 <template>
-  <nav :class="{ 'MenuTitle--isOpen': showMenu }">
-    <div class="MenuTitle">
-      <div class="MenuTitle__titleSection">
-        <p>{{ title }}</p>
-        <font-awesome-icon @click="switchMenuValue" class="MenuTitle__chevron" :icon="['fas', 'chevron-down']" />
-      </div>
-      <ul class="MenuTitle__menu">
-        <li v-for="filteredInfo in filteredInfos" v-bind:key="filteredInfo">
-          <RouterLink class="MenuTitle__link" :to=filteredInfo.route>{{ filteredInfo.pageTitle }}</RouterLink>
-        </li>
-      </ul>
+  <nav class="MenuTitle" :class="{ 'MenuTitle--isOpen': showMenu }">
+    <div class="MenuTitle__titleSection">
+      <p>{{ title }}</p>
+      <font-awesome-icon @click="switchMenuValue" class="MenuTitle__chevron" :icon="['fas', 'chevron-down']" />
     </div>
+    <ul class="MenuTitle__menu">
+      <li v-for="filteredInfo in filteredInfos" v-bind:key="filteredInfo">
+        <RouterLink class="MenuTitle__link" :to=filteredInfo.route>{{ filteredInfo.pageTitle }}</RouterLink>
+      </li>
+    </ul>
   </nav>
 </template>
   
