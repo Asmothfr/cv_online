@@ -1,8 +1,8 @@
 <template>
-  <main class="CompetencesView">
+  <main class="ViewDisplay">
     <MenuTitle :title="title" />
     <TextImageDisplay />
-    <DownChevronButton :to="buttonRoute" class="CompetencesView__Chevron" />
+    <DownChevronButton :to="buttonRoute" class="ChevronView" />
   </main>
 </template>
 
@@ -16,14 +16,4 @@ const buttonRoute = "/professional"
 
 </script>
 
-<style scoped>
-.CompetencesView {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.CompetencesView__Chevron {
-  margin: auto auto 5rem;
-}
-</style>
+<style scoped></style>

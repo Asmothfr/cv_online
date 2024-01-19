@@ -1,8 +1,8 @@
 <template>
-  <main class="ProfessionalView">
+  <main class="ViewDisplay">
     <MenuTitle :title="title" />
     <TextInfoFormat :content-page="contentPage" />
-    <DownChevronButton :to="route" class="ProfessionalView__chevron" />
+    <DownChevronButton :to="route" class="ChevronView" />
   </main>
 </template>
 
@@ -64,14 +64,4 @@ const contentPage = [{
 
 </script>
 
-<style scoped>
-.ProfessionalView {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.ProfessionalView__chevron {
-  margin: auto auto 5rem;
-}
-</style>
+<style scoped></style>

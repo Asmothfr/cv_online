@@ -1,8 +1,8 @@
 <template>
-  <main class="FormationsView">
+  <main class="ViewDisplay">
     <MenuTitle :title="title" />
     <TextInfoFormat :content-page="contentPage" />
-    <DownChevronButton :to="route" class="FormationsView__chevron" />
+    <DownChevronButton :to="route" class="ChevronView" />
   </main>
 </template>
 
@@ -43,14 +43,4 @@ const contentPage = [{
 }]
 </script>
 
-<style scoped>
-.FormationsView {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.FormationsView__chevron {
-  margin: auto auto 5rem;
-}
-</style>
+<style scoped></style>

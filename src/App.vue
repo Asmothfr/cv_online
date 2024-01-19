@@ -12,7 +12,9 @@
 import { RouterView } from 'vue-router'
 </script>
 
-<style scoped>
+<style>
+@import url(assets/styles/utils.css);
+
 .route-enter-from {
   opacity: 0;
   transform: translateY(200px);
