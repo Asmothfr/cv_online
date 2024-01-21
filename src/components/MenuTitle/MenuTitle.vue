@@ -25,7 +25,6 @@ defineProps({
 })
 
 const route = useRoute()
-console.log(route)
 const currentRoute = route.fullPath
 
 const routeInfo = [{
