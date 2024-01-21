@@ -12,7 +12,7 @@ import PresentationCard from '@/components/PresentationCard/PresentationCard.vue
 import DownChevronButton from '@/components/DownChevronButton/DownChevronButton.vue'
 
 const route = "/competences"
-const stringBorderContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id massa scelerisque, tincidunt nulla quis, malesuada ex.";
+const stringBorderContent = "À la recherche de mon premier emploi en tant que développeur web junior, je suis motivé et prêt à m'impliquer activement au sein d'une équipe.";
 </script>
 
 <style scoped></style>
